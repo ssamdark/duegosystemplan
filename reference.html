@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reference Analysis | DUEGO SYSTEM</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">DUEGO SYSTEM <span>Reference</span></a>
+            <div class="header-right">
+                <a href="https://docs.google.com/spreadsheets/d/1FZNT_RYxLXEiIbOrGzHWqLONfVAKtSa5QlkdwyTmxFM/edit?gid=1674430595#gid=1674430595"
+                    target="_blank" class="btn-wbs">
+                    WBS 일정 확인
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+
+            <section class="page-title">
+                <h2>레퍼런스 조사 및 분석</h2>
+                <p>비주얼과 구조의 분리 분석을 통해 되고시스템 리뉴얼의 핵심 인사이트를 도출합니다.</p>
+            </section>
+
+            <div class="phase-tab-container">
+                <div class="phase-tab active" onclick="showPhase('phase-visual', this)">Phase 01. 비주얼 레퍼런스</div>
+                <div class="phase-tab" onclick="showPhase('phase-structure', this)">Phase 02. 구조 레퍼런스</div>
+            </div>
+
+            <div id="phase-visual" class="tab-panel active">
+                <div class="section-header">
+                    <h3>비주얼 아이덴티티 (Visual Identity)</h3>
+                    <p>기업의 규모감과 전문성을 전달하는 프리미엄 비즈니스 디자인 사례 분석</p>
+                </div>
+
+                <article class="ref-item">
+                    <div class="ref-info">
+                        <span class="ref-tag">Space & Scale</span>
+                        <h4>SM그룹 (SM Group)</h4>
+                        <p class="ref-desc">압도적인 공간감과 고해상도 이미지를 통한 기업 규모감 강조</p>
+                        <ul class="analysis-list">
+                            <li><strong>Full-Page Layout:</strong> 한 화면에 하나의 핵심 메시지만 전달하는 집중도 높은 구성</li>
+                            <li><strong>여백의 미:</strong> 과감한 화이트 스페이스 활용으로 텍스트 가독성 및 프리미엄 느낌 강화</li>
+                            <li><strong>적용안:</strong> 메인 히어로 영역에서 되고시스템의 비전을 웅장한 비주얼로 표현</li>
+                        </ul>
+                    </div>
+                    <div class="ref-visual">
+                        <a href="https://www.smgroup.co.kr/" target="_blank">
+                            <img src="img/sm-group-ref.png" alt="SM Group Visual Reference"
+                                style="width: 100%; border-radius: 12px; border: 1px solid #eee;">
+                        </a>
+                    </div>
+                </article>
+
+                <article class="ref-item reversed">
+                    <div class="ref-info">
+                        <span class="ref-tag">Typography & Edge</span>
+                        <h4>클라비스 (Clavis)</h4>
+                        <p class="ref-desc">강렬한 타이포그래피와 정교한 선(Line)을 활용한 세련미</p>
+                        <ul class="analysis-list">
+                            <li><strong>Bold Typography:</strong> 굵고 명확한 서체와 포인트 컬러를 활용한 시각적 위계 확립</li>
+                            <li><strong>Micro Interaction:</strong> 섬세한 호버 효과와 선의 움직임을 통한 기술적 완성도 암시</li>
+                            <li><strong>적용안:</strong> 되고세이퍼 솔루션의 전문성을 강조하는 볼드한 헤드라인 스타일 차용</li>
+                        </ul>
+                    </div>
+                    <div class="ref-visual">
+                        <a href="https://www.claviscorp.com/kr/index.php" target="_blank">
+                            <img src="img/clavis-group-ref.png" alt="Clavis Visual Reference"
+                                style="width: 100%; border-radius: 12px; border: 1px solid #eee;">
+                        </a>
+                    </div>
+                </article>
+
+                <article class="ref-item">
+                    <div class="ref-info">
+                        <span class="ref-tag">Trust & Grid</span>
+                        <h4>포스코 (POSCO)</h4>
+                        <p class="ref-desc">일관된 그리드 시스템과 블루 톤의 컬러 가이드를 통한 신뢰 형성</p>
+                        <ul class="analysis-list">
+                            <li><strong>Grid System:</strong> 정갈하게 정리된 카드 레이아웃으로 방대한 콘텐츠 큐레이션</li>
+                            <li><strong>Color Identity:</strong> 신뢰와 안정감을 주는 일관된 브랜드 컬러(Blue) 운용 전략</li>
+                            <li><strong>적용안:</strong> 되고시스템의 사업 실적 및 공공 인증 섹션의 안정적인 배치 구조</li>
+                        </ul>
+                    </div>
+                    <div class="ref-visual">
+                        <a href="https://www.posco.co.kr/homepage/docs/kor7/jsp/s91a0000001i.jsp" target="_blank">
+                            <img src="img/posco-group-ref.png" alt="POSCO Visual Reference"
+                                style="width: 100%; border-radius: 12px; border: 1px solid #eee;">
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <div id="phase-structure" class="tab-panel">
+                <div class="sub-tab-container">
+                    <button class="sub-tab enterprise active" onclick="showSub('sub-enterprise', this)">Enterprise
+                        Standard</button>
+                    <button class="sub-tab domain" onclick="showSub('sub-domain', this)">Domain Analysis</button>
+                </div>
+
+                <div id="sub-enterprise" class="sub-panel active">
+                    <div class="section-header">
+                        <h3>대형 플랫폼 및 클라우드 표준</h3>
+                        <p>국내 주요 IT 기업들의 복잡한 서비스 구조를 정리하는 방식</p>
+                    </div>
+
+                    <article class="ref-item">
+                        <div class="ref-info">
+                            <span class="ref-tag">Grid & Balance</span>
+                            <h4>NHN</h4>
+                            <p class="ref-desc">기술과 서비스의 조화로운 인터페이스</p>
+                            <ul class="analysis-list">
+                                <li><strong>Grid-Based Navigation:</strong> 수많은 IT 서비스를 카테고리별로 일목요연하게 정리한 그리드형 메뉴 구조
+                                </li>
+                                <li><strong>Service Visibility:</strong> 핵심 기술력(Cloud, AI)과 실제 서비스(Game, Pay)를 대등한 비중으로
+                                    노출하여 균형감 확보</li>
+                                <li><strong>적용안:</strong> 되고시스템의 AI 솔루션과 공공/민간 서비스를 병렬 구조로 배치하여 사업 영역의 직관적 인지 유도</li>
+                            </ul>
+                        </div>
+                        <div class="ref-visual">
+                            <a href="https://www.nhn.com/" target="_blank">
+                                <img src="img/nhn-group-ref.png" alt="NHN Structural Reference"
+                                    style="width: 100%; border-radius: 12px; border: 1px solid #eee;">
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="ref-item reversed">
+                        <div class="ref-info">
+                            <span class="ref-tag">Target & Trust</span>
+                            <h4>안랩 (AhnLab)</h4>
+                            <p class="ref-desc">신뢰를 기반으로 한 솔루션 큐레이션</p>
+                            <ul class="analysis-list">
+                                <li><strong>Category Targeting:</strong> 사용자의 환경(기업/개인/공공)에 따른 맞춤형 솔루션 탐색 구조 제공</li>
+                                <li><strong>Security Insight:</strong> 단순 제품 나열이 아닌, 위협 정보 및 보안 리포트를 함께 배치하여 전문성 강조</li>
+                                <li><strong>적용안:</strong> '되고세이퍼'의 상세 기능과 함께 CSAP 인증 및 보안 실적을 구조적으로 결합하여 신뢰도 극대화</li>
+                            </ul>
+                        </div>
+                        <div class="ref-visual">
+                            <a href="https://www.ahnlab.com/" target="_blank">
+                                <img src="img/ahnlab-group-ref.png" alt="AhnLab Structural Reference"
+                                    style="width: 100%; border-radius: 12px; border: 1px solid #eee;">
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="ref-item">
+                        <div class="ref-info">
+                            <span class="ref-tag">Mega Menu & UX</span>
+                            <h4>메가존클라우드 (Megazone Cloud)</h4>
+                            <p class="ref-desc">방대한 솔루션의 정교한 카테고리화</p>
+                            <ul class="analysis-list">
+                                <li><strong>Mega Menu Strategy:</strong> 수많은 파트너사 및 클라우드 서비스를 3단 뎁스(Depth)로 체계화한 대형 메뉴
+                                    시스템</li>
+                                <li><strong>UX Accessibility:</strong> 서비스 도입 상담 및 문의 버튼을 최상단과 플로팅 메뉴로 고정하여 전환율 최적화</li>
+                                <li><strong>적용안:</strong> 되고시스템의 다각화된 AI 구축 모델을 사용자가 헤매지 않고 찾을 수 있도록 정교한 페이지 트리 설계</li>
+                            </ul>
+                        </div>
+                        <div class="ref-visual">
+                            <a href="https://www.megazone.com/" target="_blank">
+                                <img src="img/megazone-group-ref.png" alt="Megazone Cloud Structural Reference"
+                                    style="width: 100%; border-radius: 12px; border: 1px solid #eee;">
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <div id="sub-domain" class="sub-panel">
+                    <div class="section-header">
+                        <h3>동종 도메인 구조 분석</h3>
+                        <p>안전 관리 솔루션 산업군의 표준적인 IA와 콘텐츠 배치 로직</p>
+                    </div>
+
+                    <div class="domain-list-grid">
+                        <a href="https://safe-pro.kr" target="_blank" class="domain-item">
+                            <h5>세이프프로 (Safe-pro)</h5>
+                            <p>공공/B2B 사용자를 위한 타겟별 진입로 설계 최적화</p>
+                            <span class="link-text">safe-pro.kr</span>
+                        </a>
+                        <a href="https://gsil.kr" target="_blank" class="domain-item">
+                            <h5>지에스아이엘 (Gsil)</h5>
+                            <p>솔루션 구축 사례와 제품군을 명확하게 분리한 카테고리 구성</p>
+                            <span class="link-text">gsil.kr</span>
+                        </a>
+                        <a href="https://safed.kr" target="_blank" class="domain-item">
+                            <h5>세이프디 (Safed)</h5>
+                            <p>복잡한 도입 절차를 인포그래픽으로 시각화하여 이탈률 감소</p>
+                            <span class="link-text">safed.kr</span>
+                        </a>
+                        <a href="https://andami.co.kr" target="_blank" class="domain-item">
+                            <h5>안다미 / 세이프유웍스</h5>
+                            <p>인증서 및 실적 수치를 전면에 배치하여 기술적 신뢰도 확보</p>
+                            <span class="link-text">andami.co.kr</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 DUEGO SYSTEM Renewal Project Team. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+
+        function showPhase(phaseId, btn) {
+            const panels = document.querySelectorAll('.tab-panel');
+            const tabs = document.querySelectorAll('.phase-tab');
+            panels.forEach(p => p.classList.remove('active'));
+            tabs.forEach(t => t.classList.remove('active'));
+            document.getElementById(phaseId).classList.add('active');
+            btn.classList.add('active');
+        }
+
+        function showSub(subId, btn) {
+            const panels = document.querySelectorAll('.sub-panel');
+            const tabs = document.querySelectorAll('.sub-tab');
+            panels.forEach(p => p.classList.remove('active'));
+            tabs.forEach(t => t.classList.remove('active'));
+            document.getElementById(subId).classList.add('active');
+            btn.classList.add('active');
+        }
+    </script>
+</body>
+
+</html>
