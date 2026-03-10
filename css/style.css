@@ -712,6 +712,27 @@ td {
     color: var(--primary);
 }
 
+.lnb-chip {
+    background: var(--accent);
+    display: inline-block;
+    padding: 6px 16px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 13px;
+    color: var(--primary);
+}
+
+.lnb-sub-chip {
+    background: #ffffff;
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 11px;
+    color: #333;
+    border: 1px solid #e0e0e0;
+}
+
 /* 전략 설명 박스 */
 .strategy-box {
     font-size: 14.5px;
