@@ -20,8 +20,7 @@
                 <nav class="gnb">
                     <a href="reference.html" class="active">레퍼런스 조사</a>
                     <a href="menuStructure.html">메뉴 구조 정의</a>
-                    <a href="#">화면 설계</a>
-                    <a href="briefing.html">팀 분석 브리핑</a>
+                    <a href="design.html">UI/UX 컨셉 & 레이아웃</a>
                 </nav>
             </div>
             <div class="header-right">
@@ -113,9 +112,9 @@
 
             <div id="phase-structure" class="tab-panel">
                 <div class="sub-tab-container">
-                    <button class="sub-tab enterprise active" onclick="showSub('sub-enterprise', this)">Enterprise
+                    <button class="sub-tab active" onclick="showSub('sub-enterprise', this)">Enterprise
                         Standard</button>
-                    <button class="sub-tab domain" onclick="showSub('sub-domain', this)">Domain Analysis</button>
+                    <button class="sub-tab" onclick="showSub('sub-domain', this)">Domain Analysis</button>
                 </div>
 
                 <div id="sub-enterprise" class="sub-panel active">
@@ -225,26 +224,6 @@
     </footer>
 
     <script src="js/script.js"></script>
-    <script>
-
-        function showPhase(phaseId, btn) {
-            const panels = document.querySelectorAll('.tab-panel');
-            const tabs = document.querySelectorAll('.phase-tab');
-            panels.forEach(p => p.classList.remove('active'));
-            tabs.forEach(t => t.classList.remove('active'));
-            document.getElementById(phaseId).classList.add('active');
-            btn.classList.add('active');
-        }
-
-        function showSub(subId, btn) {
-            const panels = document.querySelectorAll('.sub-panel');
-            const tabs = document.querySelectorAll('.sub-tab');
-            panels.forEach(p => p.classList.remove('active'));
-            tabs.forEach(t => t.classList.remove('active'));
-            document.getElementById(subId).classList.add('active');
-            btn.classList.add('active');
-        }
-    </script>
 </body>
 
 </html>
